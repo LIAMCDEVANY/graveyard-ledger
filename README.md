@@ -8,7 +8,8 @@ Each entry acts as a preserved thought, memory, regret, or reflection within a p
 
 ## 📸 Screenshot
 
-![Graveyard Ledger Screenshot](./readme-screenshot.png)
+<img width="2500" height="1320" alt="Graveyard Ledger Screenshot" src="https://github.com/user-attachments/assets/68c7f4e3-353c-4adb-98ce-0ae5a6ee37f7" />
+
 
 ---
 
