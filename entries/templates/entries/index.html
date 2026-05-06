@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Your Entries</h1>
+
+{% if entries %}
+
+  {% for entry in entries %}
+
+    <div class="entry-card">
+
+      <h2>
+        <a href="/entries/{{ entry.id }}/">
+          {{ entry.title }}
+        </a>
+      </h2>
+
+      <p class="detail-meta">
+        {{ entry.mood }} • {{ entry.date }}
+      </p>
+
+    </div>
+
+  {% endfor %}
+
+{% else %}
+
+  <p>No entries yet.</p>
+
+{% endif %}
+
+{% endblock %}

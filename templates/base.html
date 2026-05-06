@@ -1,0 +1,43 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Graveyard Ledger</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+  <nav>
+
+ <a href="/">Home</a>
+
+  {% if user.is_authenticated %}
+
+    <a href="/entries/">Entries</a>
+
+    <form action="/accounts/logout/" method="POST" style="display:inline;">
+      {% csrf_token %}
+      <button type="submit">Logout</button>
+    </form>
+
+  {% else %}
+
+    <a href="/accounts/login/">Login</a>
+
+    <a href="/accounts/signup/">Sign Up</a>
+
+  {% endif %}
+    
+  </nav>
+
+  <main>
+    {% block content %}
+    {% endblock %}
+  </main>
+</body>
+</html>
+
+<footer>
+  <p>Graveyard Ledger • Built with Django</p>
+</footer>

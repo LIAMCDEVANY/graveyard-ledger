@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>{{ entry.title }}</h1>
+
+<p><strong>Mood:</strong> {{ entry.mood }}</p>
+<p><strong>Date:</strong> {{ entry.date }}</p>
+
+<hr>
+
+<p>{{ entry.body }}</p>
+
+<br>
+
+<a href="/entries/{{ entry.id }}/update/">Edit</a>
+
+<br><br>
+
+<a href="/entries/{{ entry.id }}/delete/">Delete</a>
+
+<br><br>
+
+<a href="/entries/">Back to All Entries</a>
+
+<hr>
+
+<p>{{ entry.body }}</p>
+
+<br><br>
+
+<a href="/entries/{{ entry.id }}/update/">
+  <button>Edit</button>
+</a>
+
+<a href="/entries/{{ entry.id }}/delete/">
+  <button>Delete</button>
+</a>
+
+{% endblock %}
