@@ -21,7 +21,7 @@ Deployment link coming soon.
 
 ## 📋 Planning Materials
 
-[Trello Board] <[link](https://trello.com/b/t92OFNui/graveyard-ledger)> 
+[[Trello Board](https://trello.com/b/t92OFNui/graveyard-ledger)]  
 
 ---
 
