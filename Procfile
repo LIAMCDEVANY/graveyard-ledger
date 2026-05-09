@@ -1,0 +1,1 @@
+web: gunicorn graveyard_ledger.wsgi

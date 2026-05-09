@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-5)a_9s3qh-0w*&3y@id$r03_x-c2-r1atxmx8t$un2r5p%e!(g
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -42,6 +42,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -119,6 +120,9 @@ STATIC_URL = 'static/'
 
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/entries/'
+
 STATICFILES_DIRS = [
     BASE_DIR / 'entries/static'
 ]
+
+STATIC_ROOT = BASE_DIR / 'staticfiles'
